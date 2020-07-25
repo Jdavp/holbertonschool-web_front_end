@@ -7,18 +7,18 @@ body {
  color: #161616;   
 }
 
-*a {
+a {
     color: #161616;
 }
 
-.visually-hidden{
+.visually-hidden {
     display: none;
 }
 
-.card-category{
+.card-category {
     color: #D73953;
 }
 
-.section-tagline{
+.section-tagline {
     color: #D73953;
 }
