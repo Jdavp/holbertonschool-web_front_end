@@ -15,7 +15,7 @@ font-family: var(--font-family-base);
     font-family: var(--font-family-title);
 }
 
-*a {
+a {
     color: var(--text-color);
 }
 
