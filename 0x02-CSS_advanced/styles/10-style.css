@@ -38,7 +38,7 @@ a {
 }
 
 .section-header{
-    align-content: var(--section-header-align);
+    text-align: var(--section-header-align);
 }
 /* Variables */
 :root{
@@ -67,5 +67,4 @@ a {
     --line-height-big : 1.8;
     /* Section */
     --section-header-align:center;
-
 }
