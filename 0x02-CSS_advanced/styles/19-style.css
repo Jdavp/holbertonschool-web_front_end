@@ -126,7 +126,7 @@ a:active{
 } 
 /* End Section */
 
-*ul .row{
+ul .row{
     margin: 0;
     padding: 0;
     list-style: none;
@@ -202,6 +202,6 @@ a:active{
     font-size: var(--font-size-small);
     color: var(--text-color);
 }
-*ul .footer{
+ul .footer{
     text-align: right;
 }
