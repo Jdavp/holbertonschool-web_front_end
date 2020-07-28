@@ -167,7 +167,7 @@ ul.row{
 
 /* Card */
 .card-services .card-title{
-    clear: both;
+    margin: 0;
 }
 
 .card-services a{
