@@ -136,7 +136,7 @@ ul.row{
 }
 
 .card-work:hover .card-outer {
-    transition: scale(0.95);
+    transform: scale(0.95);
 }
 
 .card-work .card-image img {
@@ -311,7 +311,7 @@ ul.row{
     color: var(--nav-item-link-hover);
     }
 
-.nav .nav-link::before{
+.nav .nav-link::before {
     content:"";
     position: absolute;
     top: 0;
