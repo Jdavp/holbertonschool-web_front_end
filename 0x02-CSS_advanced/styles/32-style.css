@@ -251,36 +251,6 @@ ul.row{
     text-decoration: none;
 }
 
-.card-testimonial{
-    text-align: center;
-}
-
-.card-testimonial .card-avatar{
-    border-radius: 50%;
-    width: 10rem;
-    height: 10rem;
-}
-
-.card-testimonial .card-quote cite{
-    display: block;
-    padding-top: 1rem;
-    color: var(--color-primary);
-}
-
-.card-testimonial .card-quote{
-    position: relative;
-}
-
-.card-testimonial .card-quote::before{
-    content: "\201C";
-    position: absolute;
-    top: -4.5rem;
-    left: -1rem;
-    color: #efeded;
-    font-size: 10rem;
-    z-index: -1;
-}
-
 .card-work .card-outer{
     position: relative;
     overflow: hidden;
@@ -341,6 +311,35 @@ ul.row{
     transition: scale(0.95);
 }
 
+.card-testimonial{
+    text-align: center;
+}
+
+.card-testimonial .card-avatar{
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+}
+
+.card-testimonial .card-quote cite{
+    display: block;
+    padding-top: 1rem;
+    color: var(--color-primary);
+}
+
+.card-testimonial .card-quote{
+    position: relative;
+}
+
+.card-testimonial .card-quote::before{
+    content: "\201C";
+    position: absolute;
+    top: -4.5rem;
+    left: -1rem;
+    color: #efeded;
+    font-size: 10rem;
+    z-index: -1;
+}
 
 /* End Card */
 
