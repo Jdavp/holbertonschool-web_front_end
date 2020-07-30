@@ -1,0 +1,16 @@
+/* Colors  */
+
+$myColor: #3D3D3D;
+$my_BackColor:#6D6D6D;
+
+body {
+    color:  $myColor; 
+    background-color: $my_BackColor;
+}
+
+p {
+    color: $myColor;
+}
+h2{
+    background-color: $my_BackColor;
+}
