@@ -1,6 +1,8 @@
 /* Nested class */
+$text_color_body: #3D3D3D;
+$color_red_class:  #FF0000;
 
 body {
-  color: #3D3D3D; }
+  color: $text_color_body; }
   body .red {
-    color: #FF0000; }
+    color: $color_red_class }
