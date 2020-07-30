@@ -3,6 +3,7 @@ $text_color_body: #3D3D3D;
 $color_red_class:  #FF0000;
 
 body {
-  color: $text_color_body; }
-  body .red {
-    color: $color_red_class }
+  color: $text_color_body; 
+  &.red {
+    color: $color_red_class; }
+  }
