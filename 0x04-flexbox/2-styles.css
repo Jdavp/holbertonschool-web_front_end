@@ -1,4 +1,3 @@
-
 /* SUMMARY
     1. GLOBAL
     2. LAYOUT
@@ -373,8 +372,7 @@
   }
 
   /* Section Latest news ============================= */
-
-  .section-latest-news .row{
+  .section-latest-news .row {
     flex-direction: row-reverse;
   }
   
