@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Task 6</title>
+    <script 
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" 
+    crossorigin="anonymous">
+    </script>
+
+
+<script type="application/javascript">
+        function createFamilyTree() {
+            $('body').append([
+                $('<table>').append([
+                    $('<thead>').append([
+                        $('<tr>').append([
+                            $('<th>', { text: 'Firstname' }),
+                            $('<th>', { text: 'Lastname' }),
+                        ])
+                    ]),
+                    $('<tbody>')
+                ])
+            ]);
+        }
+        function addNewMember(firstName, lastName, position) {
+            if(position == 'before'){
+                $('tbody').prepend([
+                    $('<tr>').append([
+                        $('<td>', { text: firstName }),
+                        $('<td>', { text: lastName }),
+                        $('<td>', {
+                            text: '(x)',
+                            css: { backgroundColor: 'orange' },
+                            on: {
+                                click: function () {
+                                    $(this).parents('tr').remove();
+                                }
+                            }
+                        })
+
+                    ])
+                ])
+            }
+            else {
+                $('tbody').append([
+                    $('<tr>').append([
+                        $('<td>', { text: firstName }),
+                        $('<td>', { text: lastName }),
+                        $('<td>', {
+                            text: '(x)',
+                            css: { backgroundColor: 'orange' },
+                            on: {
+                                click: function () {
+                                    $(this).parents('tr').remove();
+                                }
+                            }
+                        })
+
+                    ])
+                ])
+            }
+        }
+        createForm = () =>{
+            $('body').prepend(
+                $('<form>', {
+                    action: '#',
+                    id: 'userForm',
+                    onsubmit: "addNewMember($('#firstName').val(), $('#lastName').val(), $('select#selectUser option:checked').val() )"
+                }).append(
+                    $('<input>', {type: 'text', id: 'firstName'}),
+                    $('<input>', {type: 'text', id: 'lastName'}),
+                    $('<select>', {form: 'userForm', id: 'selectUser'}).append(
+                        $('<option>', {value: 'before'}).append('Before'),
+                        $('<option>', {value: 'after'}).append('After')
+                    ),
+                    $('<input>', {type: 'submit', value: 'Submit'})
+                )
+            )
+    }
+    $(function () {
+        createFamilyTree();
+        createForm();
+    });
+</script>
+</head>
+<body></body>
+</html>
